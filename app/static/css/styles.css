@@ -185,6 +185,8 @@ aside {
     box-sizing: border-box;
     padding: 5px;
     z-index: 2;
+    display: block;
+    position: relative;
 }
 
 .time-line-line {
@@ -204,4 +206,16 @@ aside {
 
 .time-line-block-text {
     padding: 5px;
+}
+
+.time-line-block-more {
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+    color: #000;
+    right: 10px;
+    bottom: 0;
+}
+
+.time-line-block-more:hover {
+    text-decoration: underline;
 }
