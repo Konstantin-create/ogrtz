@@ -94,16 +94,16 @@ aside {
 .aside-header {
     display: block;
     font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    color: white;
+    font-weight: 900;
+    color: #2a9134;
     transform: rotate(-90deg);
-    margin-top: 2em;
-    margin-left: -2.4em;
+    margin-top: 3em;
+    margin-left: -2.5em;
     width: 7.5em;
     height: 75px;
     line-height: 100%;
     padding-top: 10px;
-    background-color: #2a9134;
+    /*background-color: #2a9134;*/
     cursor: pointer;
 }
 
@@ -145,7 +145,7 @@ aside {
     background-size: cover;
     margin: 0 75px;
     border-radius: 0 0 10px 0;
-    box-shadow: 15px 15px 100px rgba(20, 20, 20, .8);
+    box-shadow: 190px 300px 500px rgba(0, 0, 0, 1);
     float: left;
 }
 
@@ -179,7 +179,8 @@ aside {
 .time-line-block {
     width: 300px;
     height: 175px;
-    background-color: #c8c8c8;
+    /*background-color: #c8c8c8;*/
+    border: 1px solid #c8c8c8;
     margin: 15px;
     border-radius: 5px;
     box-sizing: border-box;
@@ -191,31 +192,64 @@ aside {
 
 .time-line-line {
     width: 1px;
-    height: 195px;
+    height: 50px;
     background-color: #c8c8c8;
-    margin: 0 10px;
+    margin: 72px 10px;
     transform: rotate(90deg);
     z-index: 1;
 }
 
 .time-line-block-header {
     font-family: Montserrat, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     padding: 5px;
+    color: white;
 }
 
 .time-line-block-text {
     padding: 5px;
+    color: #c8c8c8;
 }
 
 .time-line-block-more {
     font-family: Montserrat, sans-serif;
     position: absolute;
-    color: #000;
+    font-weight: 600;
+    color: #2a9134;
     right: 10px;
     bottom: 0;
 }
 
 .time-line-block-more:hover {
     text-decoration: underline;
+}
+
+.third {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.third-left {
+    width: 30%;
+    height: 100vh;
+    background-color: #1c1c1c;
+    padding-left: 75px;
+}
+
+.third-left-header {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #c8c8c8;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.third-right {
+    width: 70%;
+    height: 100vh;
+    background-color: #c8c8c8;
 }
