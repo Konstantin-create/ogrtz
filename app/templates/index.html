@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script rel="script" src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
 </head>
 <body>
-<div class="first">
+<div class="first" id="block1">
     <div class="main-banner">
     </div>
     <h1 class="main-header wow slideInLeft" data-wow-duration="1.2s">Артем Бриус</h1>
@@ -33,108 +32,119 @@
     </aside>
     <p class="h4 continue-btn">Огуречная тусовка ✨</p>
 </div>
-<div class="second">
-    <img class="second-logo" src="{{ url_for('static', filename='img/ogrtz.jpg') }}" alt="">
-    <div class="second-about-text-block">
-        <h4 class="second-header wow slideInRight" data-wow-duration="1.2">О Лысом Человеке</h4>
-        <p class="second-about-text">
-            Артем Бриус - российский предприниматель, основатель "Огуречной империи", владелец крупнейшей в России сети
-            магазинов кроссовок, автор популярного тг-канала по бизнесу.<br><br>
-            Родившился в 1993 году в Санкт-Петербурге, обладает впечатляющим путем развития. Он получил образование на
-            факультете менеджмента Санкт-Петербургского государственного экономического университета.<br><br>
-            Успех Артема не ограничивается только бизнесом. Его наставничество привело к открытию многих известных
-            магазинов кроссовок, каждый из которых обладает уникальной концепцией и стратегией бренда.<br><br>
+<div class="second" id="block2">
+    <div style="height: 100vh">
+        <img class="second-logo" src="{{ url_for('static', filename='img/ogrtz.jpg') }}" alt="">
+        <div class="second-about-text-block">
+            <h4 class="second-header wow slideInRight" data-wow-duration="1.2">О Лысом Человеке</h4>
+            <p class="second-about-text">
+                Артем Бриус - российский предприниматель, основатель "Огуречной империи", владелец крупнейшей в России
+                сети
+                магазинов кроссовок, автор популярного тг-канала по бизнесу.<br><br>
+                Родившился в 1993 году в Санкт-Петербурге, обладает впечатляющим путем развития. Он получил образование
+                на
+                факультете менеджмента Санкт-Петербургского государственного экономического университета.<br><br>
+                Успех Артема не ограничивается только бизнесом. Его наставничество привело к открытию многих известных
+                магазинов кроссовок, каждый из которых обладает уникальной концепцией и стратегией бренда.<br><br>
 
-            Своим огуречным телеграм-каналом, считающимся крупнейшим в СНГ по темам бизнеса и личностного роста, Артем
-            поделился своим опытом и знаниями с более чем 130 000 подписчиками. Его влияние также распространяется на
-            другие социальные сети, где количество его подписчиков превышает 350 000, подтверждая его статус одного из
-            самых влиятельных бизнесменов современной России.
-        </p>
-    </div>
-    <div class="time-line-blocks wow slideInUp" data-wow-duration="1.2">
-        <div class="time-line-block">
-            <h5 class="time-line-block-header">2016 год</h5>
-            <p class="time-line-block-text">Первый магазин кроссовок за 120 000₽</p>
-            <a href="https://t.me/ogrtz/8137"><p class="time-line-block-more">Подробнее</p></a>
+                Своим огуречным телеграм-каналом, считающимся крупнейшим в СНГ по темам бизнеса и личностного роста,
+                Артем
+                поделился своим опытом и знаниями с более чем 130 000 подписчиками. Его влияние также распространяется
+                на
+                другие социальные сети, где количество его подписчиков превышает 350 000, подтверждая его статус одного
+                из
+                самых влиятельных бизнесменов современной России.
+            </p>
         </div>
-        <div class="time-line-line"></div>
-        <div class="time-line-block">
-            <h5 class="time-line-block-header">2018 год</h5>
-            <p class="time-line-block-text">Открыв магазин эксклюзивной косметики в одном из ведущих ТРЦ России -
-                «Галерея» в Санкт-Петербурге</p>
-            <a href="https://t.me/ogrtz/5279"><p class="time-line-block-more">Подробнее</p></a>
-        </div>
-        <div class="time-line-line"></div>
-        <div class="time-line-block">
-            <h5 class="time-line-block-header">2021 год</h5>
-            <p class="time-line-block-text">Создание Огуречного канала в Телеграм</p>
-            <a href="https://t.me/ogrtz/"><p class="time-line-block-more">Подробнее</p></a>
-        </div>
-        <div class="time-line-line"></div>
-        <div class="time-line-block">
-            <h5 class="time-line-block-header">2023 год</h5>
-            <p class="time-line-block-text">Создание Огуречного канала в YouTube</p>
-            <a href="https://www.youtube.com/@ogrtz"><p class="time-line-block-more">Подробнее</p></a>
-        </div>
-    </div>
-</div>
-<div class="third">
-    <div class="third-left">
-        <h3 class="third-left-header">Огуречный<br>тур</h3>
-        <div class="third-left-points">
-            <a href=""><p class="point-line finished"><span class="point-line-date">18.11</span> Владивосток</p></a>
-            <a href=""><p class="point-line finished"><span class="point-line-date">19.11</span> Хабаровск</p></a>
-            <a href=""><p class="point-line finished"><span class="point-line-date">20.11</span>
-                Петропавловск-Камчатский</p></a>
-            <a href=""><p class="point-line finished"><span class="point-line-date">21.11</span> Новосибирск</p></a>
-            <a href=""><p class="point-line finished"><span class="point-line-date">22.11</span> Нижневартовск</p></a>
-            <a href=""><p class="point-line current"><span class="point-line-date">23.11</span> Сургут</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="0s" data-wow-duration="1s"><span
-                    class="point-line-date">24.11</span> Екатеринбург</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="5ms" data-wow-duration="1s"><span
-                    class="point-line-date">25.11</span> Челябинск</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="10ms" data-wow-duration="1s"><span
-                    class="point-line-date">26.11</span> Миасс</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="15ms" data-wow-duration="1s"><span
-                    class="point-line-date">27.11</span> Уфа</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="20ms" data-wow-duration="1s"><span
-                    class="point-line-date">28.11</span> Нижнекаменск</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="25ms" data-wow-duration="1s"><span
-                    class="point-line-date">29.11</span> Тольятти</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="30ms" data-wow-duration="1s"><span
-                    class="point-line-date">30.11</span> Самара</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="35ms" data-wow-duration="1s"><span
-                    class="point-line-date">01.12</span> Саратов</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="40ms" data-wow-duration="1s"><span
-                    class="point-line-date">02.12</span> Ростов-на-Дону</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="45ms" data-wow-duration="1s"><span
-                    class="point-line-date">03.12</span> Армавир</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="50ms" data-wow-duration="1s"><span
-                    class="point-line-date">04.12</span> Ставрополь</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="55ms" data-wow-duration="1s"><span
-                    class="point-line-date">05.12</span> Санкт-Петербург</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="60ms" data-wow-duration="1s"><span
-                    class="point-line-date">07.12</span> Петрозаводск</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="70ms" data-wow-duration="1s"><span
-                    class="point-line-date">08.12</span> Архангельск</p></a>
-            <a href=""><p class="point-line wow slideInLeft" data-wow-delay="75ms" data-wow-duration="1s"><span
-                    class="point-line-date">10.12</span> Северодвинск</p></a>
+        <div class="time-line-blocks wow slideInUp" data-wow-duration="1.2">
+            <div class="time-line-block">
+                <h5 class="time-line-block-header">2016 год</h5>
+                <p class="time-line-block-text">Первый магазин кроссовок за 120 000₽</p>
+                <a href="https://t.me/ogrtz/8137"><p class="time-line-block-more">Подробнее</p></a>
+            </div>
+            <div class="time-line-line"></div>
+            <div class="time-line-block">
+                <h5 class="time-line-block-header">2018 год</h5>
+                <p class="time-line-block-text">Открыв магазин эксклюзивной косметики в одном из ведущих ТРЦ России -
+                    «Галерея» в Санкт-Петербурге</p>
+                <a href="https://t.me/ogrtz/5279"><p class="time-line-block-more">Подробнее</p></a>
+            </div>
+            <div class="time-line-line"></div>
+            <div class="time-line-block">
+                <h5 class="time-line-block-header">2021 год</h5>
+                <p class="time-line-block-text">Создание Огуречного канала в Телеграм</p>
+                <a href="https://t.me/ogrtz/"><p class="time-line-block-more">Подробнее</p></a>
+            </div>
+            <div class="time-line-line"></div>
+            <div class="time-line-block">
+                <h5 class="time-line-block-header">2023 год</h5>
+                <p class="time-line-block-text">Создание Огуречного канала в YouTube</p>
+                <a href="https://www.youtube.com/@ogrtz"><p class="time-line-block-more">Подробнее</p></a>
+            </div>
         </div>
     </div>
-    <div class="third-right">
-        <h4 class="third-right-header">Огуречный тур - это</h4>
-        <a href=""><p class="third-right-element el1 bounceIn" data-wow-delay="0s">Идея</p></a>
-        <a href=""><p class="third-right-element el2 bounceIn" data-wow-delay="0.1s">Транспорт</p></a>
-        <a href=""><p class="third-right-element el3 bounceIn" data-wow-delay="0.13s">Первый тур на лимузине</p></a>
-        <a href=""><p class="third-right-element el4 bounceIn" data-wow-delay="0.05s">Владивосток</p></a>
-        <a href=""><p class="third-right-element el5 bounceIn" data-wow-delay="0.3s">Хабаровск</p></a>
-        <a href=""><p class="third-right-element el6 bounceIn" data-wow-delay="0.1s">Петропавловск-Камчатский</p></a>
-        <a href=""><p class="third-right-element el7 bounceIn" data-wow-delay="0.21s">Новосибирск</p></a>
-        <a href=""><p class="third-right-element el8 bounceIn" data-wow-delay="0.14s">Нижневартовск</p></a>
+    <div class="third" id="block3">
+        <div class="third-left">
+            <div class="third-left-line"></div>
+            <h3 class="third-left-header">Огуречный<br>тур</h3>
+            <div class="third-left-points">
+                <a href=""><p class="point-line finished"><span class="point-line-date">18.11</span> Владивосток</p></a>
+                <a href=""><p class="point-line finished"><span class="point-line-date">19.11</span> Хабаровск</p></a>
+                <a href=""><p class="point-line finished"><span class="point-line-date">20.11</span>
+                    Петропавловск-Камчатский</p></a>
+                <a href=""><p class="point-line finished"><span class="point-line-date">21.11</span> Новосибирск</p></a>
+                <a href=""><p class="point-line finished"><span class="point-line-date">22.11</span> Нижневартовск</p>
+                </a>
+                <a href=""><p class="point-line current"><span class="point-line-date">23.11</span> Сургут</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="0s" data-wow-duration="1s"><span
+                        class="point-line-date">24.11</span> Екатеринбург</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="5ms" data-wow-duration="1s"><span
+                        class="point-line-date">25.11</span> Челябинск</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="10ms" data-wow-duration="1s"><span
+                        class="point-line-date">26.11</span> Миасс</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="15ms" data-wow-duration="1s"><span
+                        class="point-line-date">27.11</span> Уфа</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="20ms" data-wow-duration="1s"><span
+                        class="point-line-date">28.11</span> Нижнекаменск</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="25ms" data-wow-duration="1s"><span
+                        class="point-line-date">29.11</span> Тольятти</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="30ms" data-wow-duration="1s"><span
+                        class="point-line-date">30.11</span> Самара</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="35ms" data-wow-duration="1s"><span
+                        class="point-line-date">01.12</span> Саратов</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="40ms" data-wow-duration="1s"><span
+                        class="point-line-date">02.12</span> Ростов-на-Дону</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="45ms" data-wow-duration="1s"><span
+                        class="point-line-date">03.12</span> Армавир</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="50ms" data-wow-duration="1s"><span
+                        class="point-line-date">04.12</span> Ставрополь</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="55ms" data-wow-duration="1s"><span
+                        class="point-line-date">05.12</span> Санкт-Петербург</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="60ms" data-wow-duration="1s"><span
+                        class="point-line-date">07.12</span> Петрозаводск</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="70ms" data-wow-duration="1s"><span
+                        class="point-line-date">08.12</span> Архангельск</p></a>
+                <a href=""><p class="point-line wow slideInLeft" data-wow-delay="75ms" data-wow-duration="1s"><span
+                        class="point-line-date">10.12</span> Северодвинск</p></a>
+            </div>
+        </div>
+        <div class="third-right">
+            <h4 class="third-right-header">Огуречный тур - это</h4>
+            <a href=""><p class="third-right-element el1 bounceIn" data-wow-delay="0s">Идея</p></a>
+            <a href=""><p class="third-right-element el2 bounceIn" data-wow-delay="0.1s">Транспорт</p></a>
+            <a href=""><p class="third-right-element el3 bounceIn" data-wow-delay="0.13s">Первый тур на лимузине</p></a>
+            <a href=""><p class="third-right-element el4 bounceIn" data-wow-delay="0.05s">Владивосток</p></a>
+            <a href=""><p class="third-right-element el5 bounceIn" data-wow-delay="0.3s">Хабаровск</p></a>
+            <a href=""><p class="third-right-element el6 bounceIn" data-wow-delay="0.1s">Петропавловск-Камчатский</p>
+            </a>
+            <a href=""><p class="third-right-element el7 bounceIn" data-wow-delay="0.21s">Новосибирск</p></a>
+            <a href=""><p class="third-right-element el8 bounceIn" data-wow-delay="0.14s">Нижневартовск</p></a>
+        </div>
     </div>
 </div>
 <div class="fourth">
 
 </div>
 </body>
+<script rel="script" src="{{ url_for('static', filename='js/script.js') }}"></script>
 </html>
