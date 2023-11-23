@@ -382,3 +382,30 @@ aside {
     left: 300px;
     color: #217227;
 }
+
+@media screen and (min-width: 1300px) {
+    .second-logo {
+        width: 550px;
+        height: 550px;
+    }
+
+    .second-about-text {
+        font-size: 14px;
+    }
+
+    .second-about-text-block {
+        height: 550px;
+    }
+
+    .time-line-blocks {
+        margin: 10px auto;
+    }
+
+    .el4 {
+        top: 210px;
+        left: 60px;
+    }
+    .el7 {
+        bottom: 250px;
+    }
+}
