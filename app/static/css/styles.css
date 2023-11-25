@@ -383,33 +383,6 @@ aside {
     color: #217227;
 }
 
-@media screen and (min-width: 1300px) {
-    .second-logo {
-        width: 550px;
-        height: 550px;
-    }
-
-    .second-about-text {
-        font-size: 14px;
-    }
-
-    .second-about-text-block {
-        height: 550px;
-    }
-
-    .time-line-blocks {
-        margin: 10px auto;
-    }
-
-    .el4 {
-        top: 210px;
-        left: 60px;
-    }
-
-    .el7 {
-        bottom: 250px;
-    }
-}
 
 .fourth {
     position: relative;
@@ -489,7 +462,8 @@ aside {
     color: #ffffff;
     letter-spacing: -1px;
     text-align: center;
-    padding: 25px;
+    margin-top: 20px;
+    padding: 25px 25px -40px;
 }
 
 .fourth-form-text {
@@ -511,4 +485,74 @@ aside {
     width: 100%;
     color: #c8c8c8;
     outline: none;
+}
+
+.fourth-form-hint {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #c8c8c8;
+    padding: 50px 3% 0;
+}
+
+.fourth-form-warn {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    color: #c8c8c8;
+    padding: 50px 3% 0;
+    width: 100%;
+}
+
+.fourth-form-submit {
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    background-color: #2a9134;
+    border: none;
+}
+
+.fourth-form-submit input {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 1300px) {
+    .second-logo {
+        width: 550px;
+        height: 550px;
+    }
+
+    .second-about-text {
+        font-size: 14px;
+    }
+
+    .second-about-text-block {
+        height: 550px;
+    }
+
+    .time-line-blocks {
+        margin: 10px auto;
+    }
+
+    .el4 {
+        top: 210px;
+        left: 60px;
+    }
+
+    .el7 {
+        bottom: 250px;
+    }
+
+    .fourth-about-text {
+        width: 60%;
+    }
+
+    .fourth-text {
+        padding-top: 35vh;
+        width: 65%;
+    }
 }
