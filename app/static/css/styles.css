@@ -512,7 +512,7 @@ aside {
     letter-spacing: -1px;
     line-height: 1.2em;
     color: #c8c8c8;
-    padding: 50px 3% 0;
+    padding: 200px 3% 0;
     width: 100%;
 }
 
@@ -563,5 +563,8 @@ aside {
     .fourth-text {
         padding-top: 35vh;
         width: 65%;
+    }
+    .fourth-form-warn {
+        padding: 50px 3% 0;
     }
 }
